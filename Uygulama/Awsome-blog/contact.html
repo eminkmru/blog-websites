@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Awesome Blog</title>
 </head>
-<body>
+<body class="h-100 d-flex flex-column">
 
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
@@ -23,13 +23,13 @@
           
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="blogs.html" class="nav-link">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="contact.html" class="nav-link active">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex">           
@@ -44,11 +44,55 @@
         </div>
     </nav>
     
+    <main>
+        <div class="container my-4">
+            <h2 class="my-3">Contact US</h2>
+            <div class="row g-2">
+                <div class="col-md-6 order-2 order-md-1 my-4">
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11218.825856444615!2d32.63754348748294!3d39.9513657516647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d339de7cfc1f27%3A0xb01a4d66ff3bb6be!2sZafer%20Park%C4%B1!5e0!3m2!1str!2str!4v1659704233829!5m2!1str!2str" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <div class="alert alert-warning">
+                                Please fill out the form.
+                            </div>
+                            <form class="row g-3 text-white">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" name="name" id="name" class="form-control">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" name="phone" id="phone" class="form-control">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="email" name="subject" id="subject" class="form-control">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea name="message" id="message" class="form-control"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-outline-warning">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    
 
 
-    <footer class="py-5 bg-dark text-white">
+
+    <footer class="py-5 bg-dark text-white mt-auto">
         <div class="container text-center">
             <span>All Rights Reserved.</span>
         </div>
